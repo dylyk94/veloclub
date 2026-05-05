@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #D4FF00;
+  --color-brand-secondary: #ffffff;
+  --color-technical-bg: #111111;
+  --color-technical-ink: #ffffff;
+  --color-accent-muted: rgba(212, 255, 0, 0.1);
+  --font-technical: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-[#111111] text-white antialiased overflow-x-hidden;
+  }
+}
+
+.technical-grid {
+  background-size: 60px 60px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+.serif-italic {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
